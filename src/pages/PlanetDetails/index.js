@@ -107,7 +107,7 @@ const PlanetDetails = ({getData}) => {
 	return (
 		<div>
 			<h1>
-				{characterInfo.name}
+				{planetInfo.name}
 				<NextPlanetLinkWrapper>
 					<Link to={`/planet/${+id + 1}`}>&rarr;</Link>
 				</NextPlanetLinkWrapper>

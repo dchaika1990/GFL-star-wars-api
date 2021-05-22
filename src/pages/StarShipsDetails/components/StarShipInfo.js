@@ -52,7 +52,7 @@ export default function StarShipInfo({id, starShip}) {
 			</div>
 			<div>
 				<dl>
-					<StarShipInfoRow name='Name' value={starShip.name}/>
+					<StarShipInfoRow name='Starship class' value={starShip.starship_class}/>
 				</dl>
 				<dl>
 					<StarShipInfoRow name='Model' value={`${starShip.model}`}/>

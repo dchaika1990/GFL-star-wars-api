@@ -4,8 +4,10 @@ import {BrowserRouter as Router, Link} from "react-router-dom";
 
 import Planets from "pages/Planets";
 import StarShips from "pages/StarShips";
+import Characters from "./pages/Characters";
 import PlanetDetails from "pages/PlanetDetails";
 import StarShipsDetails from "pages/StarShipsDetails";
+import CharacterDetails from "pages/CharacterDetails";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Header from "./components/Header";
 import InterestingFacts from "./components/InterestingFacts";
@@ -39,6 +41,16 @@ const App = () => {
 							<Route path="/starship/:id">
 								<ErrorBoundary>
 									<StarShipsDetails/>
+								</ErrorBoundary>
+							</Route>
+							<Route path="/(characters)?" exact>
+								<ErrorBoundary>
+									<Characters />
+								</ErrorBoundary>
+							</Route>
+							<Route path="/character/:id">
+								<ErrorBoundary>
+									<CharacterDetails/>
 								</ErrorBoundary>
 							</Route>
 							<Route>

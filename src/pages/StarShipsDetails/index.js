@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Loader from 'components/Loader';
 import ServerError from 'components/ServerError';
 
-import apiService from 'services/planets';
+import apiService from 'services/characters';
 
 import {NotificationContext} from '../../components/Notification';
 import CharactersInfo, {

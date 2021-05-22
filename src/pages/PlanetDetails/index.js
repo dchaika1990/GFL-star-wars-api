@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Loader from 'components/Loader';
 import ServerError from 'components/ServerError';
 
-import apiService from 'services/planets';
+import apiService from 'services/characters';
 
 import {NotificationContext} from '../../components/Notification';
 import CharactersInfo, {
@@ -136,7 +136,7 @@ const PlanetDetails = ({getData}) => {
 										alt={info.name}
 										className='img-rounded'
 									/>
-									<Link to={`/characters/${id}`}>{info.name}</Link>
+									<Link to={`/character/${id}`}>{info.name}</Link>
 									<InfoWrapper>
 										<PlanetInfoRow name='Gender' value={info.gender}/>
 									</InfoWrapper>

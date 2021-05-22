@@ -53,7 +53,6 @@ const PlanetDetails = ({getData}) => {
 
 	const [characterInfo, setCharacterInfo] = useState([]);
 
-	// const { fetching, error, planetInfo } = fetchStatus;
 	const {fetching, error, planetInfo} = state;
 
 	useEffect(() => {

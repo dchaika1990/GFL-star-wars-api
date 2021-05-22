@@ -132,7 +132,7 @@ const StarShipsDetails = ({getData}) => {
 										alt={info.name}
 										className='img-rounded'
 									/>
-									<Link to={`/characters/${id}`}>{info.name}</Link>
+									<Link to={`/character/${id}`}>{info.name}</Link>
 									<InfoWrapper>
 										<StarShipInfoRow name='Gender' value={info.gender}/>
 									</InfoWrapper>
